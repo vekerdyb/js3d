@@ -1,0 +1,8 @@
+# webstorm
+.idea
+
+# build
+app/bundle.js
+
+# libs
+node_modules
