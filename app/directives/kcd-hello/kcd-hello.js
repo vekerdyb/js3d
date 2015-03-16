@@ -1,7 +1,7 @@
 export default ngModule => {
 
   if (ON_TEST) {
-    require('./kcd-hello.test')(ngModule);
+    require('./kcd-hello.test.js')(ngModule);
   }
 
   ngModule.directive('kcdHello', () => {

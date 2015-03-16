@@ -2,10 +2,9 @@
   "name": "js3d",
   "version": "1.0.0",
   "description": "Simple 3d library for the HTML canvas",
-  "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/karma/bin/karma start",
-    "start": "node node_modules/.bin/webpack-dev-server --content-base app"
+    "start": "node node_modules/.bin/webpack-dev-server --colors --progress --content-base app"
   },
   "repository": {
     "type": "git",
