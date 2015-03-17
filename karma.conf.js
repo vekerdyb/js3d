@@ -2,7 +2,7 @@ var path = require('path');
 var webpackConfig = require('./webpack.config');
 var entry = path.resolve(webpackConfig.context, webpackConfig.entry);
 var preprocessors = {};
-preprocessors[entry] = ['webpack'];
+preprocessors[entry] = ['webpack', 'sourcemap'];
 
 module.exports = function(config) {
   config.set({
@@ -21,6 +21,9 @@ module.exports = function(config) {
 
     webpack: webpackConfig,
 
+    webpackMiddleware: {
+      noInfo: true
+    },
 
     // list of files to exclude
     exclude: [
@@ -69,7 +72,8 @@ module.exports = function(config) {
     plugins: [
       require('karma-webpack'),
       'karma-jasmine',
-      'karma-phantomjs-launcher'
+      'karma-phantomjs-launcher',
+      'karma-sourcemap-loader'
     ]
   });
 };

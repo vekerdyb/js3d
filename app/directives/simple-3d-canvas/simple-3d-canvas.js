@@ -5,7 +5,7 @@ export default ngModule => {
   }
 
   ngModule.directive('simple3dCanvas', () => {
-    require('./simple3d-canvas.scss');
+    require('./simple-3d-canvas.scss');
     return {
       restrict: 'E',
       scope: {},
