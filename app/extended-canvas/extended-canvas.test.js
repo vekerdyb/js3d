@@ -1,5 +1,5 @@
 export default ngModule => {
-  describe(`simple-2d-canvas`, () => {
+  describe(`extendedCanvas`, () => {
     beforeEach(window.module(ngModule.name));
 
     var el, isolateScope;

@@ -5,8 +5,11 @@
     <title>Simple3d demo</title>
 </head>
 <body ng-app="app">
-<simple3d-canvas></simple3d-canvas>
-<simple3d-canvas></simple3d-canvas>
+    <img id="transparent" src="transparent2.png">
+    <simple3d-canvas></simple3d-canvas>
+    <extended-canvas id="canvas1" ng-controller="ExampleController"></extended-canvas>
+    </div>
+    <canvas id="tmp-canvas"></canvas>
 <script src="bundle.js"></script>
 </body>
 </html>

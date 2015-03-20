@@ -6,4 +6,5 @@ if (ON_TEST) {
 
 var ngModule = angular.module('app', []);
 
+require('./extended-canvas')(ngModule);
 require('./directives')(ngModule);
