@@ -4,13 +4,10 @@ export default ngModule => {
     require('./svg-canvas.test.js')(ngModule);
   }
 
-  function SvgCanvas() {
-    return {
-      restrict: 'E',
-      template: `<svg></svg>`
-    }
+  class SvgCanvasManager {
+
   }
 
-  ngModule.directive('svgCanvas', SvgCanvas)
+  ngModule.service('SvgCanvasManager', SvgCanvasManager);
 
 }
